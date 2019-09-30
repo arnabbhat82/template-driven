@@ -11,6 +11,7 @@ export class AppComponent {
   @ViewChild('f', { static: false }) signupForm: NgForm;
   defaultQuestion = 'teacher';
   answer = '';
+  genders = ['male', 'female'];
   // onSubmit(form: NgForm) {
   //   console.log(form);
   // }
