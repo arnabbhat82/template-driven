@@ -9,6 +9,7 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
   title = 'template-driven';
   @ViewChild('f', { static: false }) signupForm: NgForm;
+  defaultQuestion = 'teacher';
   // onSubmit(form: NgForm) {
   //   console.log(form);
   // }
