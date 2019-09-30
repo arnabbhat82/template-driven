@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'template-driven';
   @ViewChild('f', { static: false }) signupForm: NgForm;
   defaultQuestion = 'teacher';
+  answer = '';
   // onSubmit(form: NgForm) {
   //   console.log(form);
   // }
