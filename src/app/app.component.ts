@@ -12,6 +12,18 @@ export class AppComponent {
   defaultQuestion = 'teacher';
   answer = '';
   genders = ['male', 'female'];
+  suggestuserName() {
+    const suggestedName = 'Superuser';
+    this.signupForm.setValue({
+      userData: {
+        username: suggestedName,
+        email: '',
+      },
+      secret: 'pet',
+      questionAnswer: '',
+      gender: 'male',
+    });
+  }
   // onSubmit(form: NgForm) {
   //   console.log(form);
   // }
