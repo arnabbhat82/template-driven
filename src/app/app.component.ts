@@ -8,11 +8,11 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   title = 'template-driven';
-  @ViewChild('f') signupForm: NgForm;
+  @ViewChild('f', { static: false }) signupForm: NgForm;
   // onSubmit(form: NgForm) {
   //   console.log(form);
   // }
   onSubmit() {
-    console.log('this.signupForm');
+    console.log(this.signupForm);
   }
 }
